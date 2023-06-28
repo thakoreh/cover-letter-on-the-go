@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cover Letter Generator</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="popup.js"></script>
+</head>
+<body>
+  <h1>Cover Letter Generator</h1>
+  <div id="resumeUpload">
+    <label for="resume">Upload your resume:</label>
+    <input type="file" id="resume" accept=".pdf,.doc,.docx">
+  </div>
+  <div id="jobDescription">
+    <p>Select the job description using your cursor:</p>
+    <button id="captureDescription">Capture Job Description</button>
+    <p id="selectedDescription"></p>
+  </div>
+  <div id="coverLetter">
+    <h2>Cover Letter</h2>
+    <div id="generatedLetter"></div>
+    <button id="copyButton">Copy to Clipboard</button>
+  </div>
+</body>
+</html>

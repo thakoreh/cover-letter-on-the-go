@@ -1,0 +1,38 @@
+body {
+    width: 400px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  #resumeUpload {
+    margin-bottom: 20px;
+  }
+  
+  #jobDescription {
+    margin-bottom: 20px;
+  }
+  
+  #coverLetter {
+    text-align: center;
+  }
+  
+  #coverLetter h2 {
+    margin-bottom: 10px;
+  }
+  
+  #generatedLetter {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  
+  #copyButton {
+    display: block;
+    margin: 0 auto;
+  }
+  
