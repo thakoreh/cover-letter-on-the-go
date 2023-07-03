@@ -23,7 +23,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function parseResume(file) {
     // Send the resume file to a server for parsing
-    // Update the server endpoint with your own implementation
     const serverEndpoint = "https://your-server.com/parse-resume";
 
     const formData = new FormData();
@@ -33,7 +32,12 @@ document.addEventListener("DOMContentLoaded", function () {
       method: "POST",
       body: formData,
     })
-      .then((response) => response.json())
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+      })
       .then((data) => {
         // Process the parsed resume data
         const resumeData = data;
@@ -56,3 +60,4 @@ document.addEventListener("DOMContentLoaded", function () {
     generatedLetter.innerText = coverLetter;
   }
 });
+
